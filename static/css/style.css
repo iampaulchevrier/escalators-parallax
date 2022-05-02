@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*===== General CSS =====*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/*===== Custom colors =====*/
+:root {
+    --pink: #9952b1;
+    --purple: #4b0064;
+}
+
+/*====== Custom scrollbar ======*/
+
+* {
+    scrollbar-color: #fff transparent;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--purple);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #fff;
+}
+
+/*===== CSS =====*/
+
+/* Header & navbar */
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--purple);
+    z-index: 100;
+}
+
+header .logo {
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+header .logo img {
+    height: 100%;
+    width: 100%;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+header ul li a:hover {
+    background-color: #fff;
+    color: var(--purple);
+}
+
+/* Home section*/
+.home-section {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, var(--purple), var(--pink));
+    overflow: hidden;
+}
+
+.home-section:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(to top, var(--purple), transparent);
+    z-index: 100;
+}
+
+.home-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.home-section img#first-woman {
+    z-index: 5;
+}
+
+.home-section img#first-man {
+    z-index: 4;
+}
+
+.home-section img#second-woman {
+    z-index: 3;
+}
+
+.home-section img#escalator {
+    z-index: 2;
+}
+
+.home-section img#second-man {
+    z-index: 1;
+}
+
+/* About section */
+.about-section {
+    position: relative;
+    display: block;
+    padding: 25px 50px 50px 50px;
+    background-color: var(--purple);
+}
+
+.about-section:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    background: linear-gradient(to top, var(--pink), transparent);
+    z-index: 100;
+}
+
+.about-section h2 {
+    margin-bottom: 0.65em;
+    color: #fff;
+    font-size: 3.25em;
+}
+
+.about-section h3 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    font-size: 2em;
+}
+
+.about-section p {
+    margin: 1em 0;
+    color: #fff;
+    font-size: 1em;
+}
+
+.about-section ul {
+    margin: 1em 0;
+    padding-left: 2.5em;
+}
+
+.about-section ul li {
+    margin: 0.5em 0;
+    color: #fff;
+    font-size: 1em;
+}
+
+/* Credits section */
+.credits-section {
+    position: relative;
+    display: block;
+    padding: 25px 50px;
+    background-color: var(--pink);
+}
+
+.credits-section h2 {
+    margin-bottom: 0.65em;
+    color: #fff;
+    font-size: 3.25em;
+}
+
+.credits-section h3 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    font-size: 2em;
+}
+
+.credits-section p {
+    margin: 1em 0;
+    color: #fff;
+    font-size: 1em;
+}
+
+.credits-section p a {
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+footer .logo {
+    height: 80px;
+    width: 80px;
+    color: var(--purple);
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer .logo img {
+    height: 100%;
+    width: 100%;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .social a {
+    margin-left: 20px;
+    color: var(--purple);
+    font-size: 1.5em;
+}
+
+footer .social a:hover {
+    color: var(--pink);
+}
