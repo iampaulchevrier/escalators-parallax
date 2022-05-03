@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
+/*===== Custom colors =====*/
+
+:root {
+    --pink: #9952b1;
+    --purple: #4b0064;
+}
+
 /*===== General CSS =====*/
 
 * {
@@ -15,17 +22,27 @@ body {
     overflow-x: hidden;
 }
 
-/*===== Custom colors =====*/
+/*===== Responsive =====*/
 
-:root {
-    --pink: #9952b1;
-    --purple: #4b0064;
+@media screen and (max-width: 650px) {
+    .header {
+        justify-content: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .home-section img {
+        width: 100px;
+    }
 }
 
 /*====== Custom scrollbar ======*/
 
 * {
     scrollbar-color: #fff transparent;
+    flex-direction: row;
 }
 
 ::-webkit-scrollbar {
@@ -237,6 +254,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     background-color: #fff;
+    color: var(--purple);
 }
 
 footer .logo {
