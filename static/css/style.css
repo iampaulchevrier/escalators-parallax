@@ -260,6 +260,7 @@ footer {
 footer .logo {
     height: 80px;
     width: 80px;
+    margin-right: 20px;
     color: var(--purple);
     font-size: 2em;
     font-weight: 700;
